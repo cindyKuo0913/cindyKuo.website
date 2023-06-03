@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="Cindy">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://cindyKuo0913/website/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta property="og:type" content="website">
+<meta property="og:title" content="Cindy&#39;s">
+<meta property="og:url" content="https://cindykuo0913/website/index.html">
+<meta property="og:site_name" content="Cindy&#39;s">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:author" content="CindyKuo">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/website/images/c2.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/website/images/c2.png">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/website/website/images/c2.png">
+    <!--- Page Info-->
+    
+    <title>
+        
+        Cindy&#39;s website
+    </title>
+    
+<link rel="stylesheet" href="/website/css/style.css">
+
+    
+<link rel="stylesheet" href="/website/assets/fonts.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"cindykuo0913","root":"/website/","language":"zh-TW"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"static","image":{"light":"/images/jump.JPG","dark":"/images/jump.JPG"},"title":"Welcome to Cindy's!","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.1.4","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}}};
+    Global.language_ago = {"second":"%s 秒前","minute":"%s 分鐘前","hour":"%s 小時前","day":"%s 天前","week":"%s 周前","month":"%s 個月前","year":"%s 年前"};
+    Global.data_config = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/website/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/website/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/website/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/website/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+        $temp-title-fs = hexo-config('home_banner.text_style.title_size')
+$title-font-size = $temp-title-fs ? convert($temp-title-fs) : 2.8rem
+$temp-subtitle-fs = hexo-config('home_banner.text_style.subtitle_size')
+$subtitle-font-size = $temp-subtitle-fs ? convert($temp-subtitle-fs) : 1.4rem
+$temp-line-height = hexo-config('style.first_screen.line_height')
+$line-height = $temp-line-height ? $temp-line-height : 1.2
+$home-banner-icon-size = 1.6rem
+
+@import "../../common/variables"
+
+.home-banner-background {
+  position fixed
+  top 0
+  left 0
+  width 100vw
+  height 100vh
+  background var(--home-banner-img) center center / cover no-repeat
+  background-size cover
+  will-change transform
+  box-sizing border-box
+  transform scale(1.1)
+}
+
+.home-banner-container {
+  font-family "Optima Bold", sans-serif
+  position relative
+  box-sizing border-box
+  width 100%
+  min-height 100vh
+  overflow hidden
+  background var(--home-banner-img) center center / cover no-repeat
+  background-size cover
+  will-change transform
+
+  .content {
+    position relative
+    box-sizing border-box
+    min-height 90vh
+
+    .description {
+      width: 100vw
+      font-weight bold
+      font-size $title-font-size
+      line-height $line-height
+      text-align center
+      color var(--home-banner-text-color)
+
+      p {
+        margin 0
+        opacity 0.9
+        font-family "Optima", sans-serif
+
+        i {
+          font-size: $subtitle-font-size
+          font-style normal
+        }
+
+        span {
+          font-size: $subtitle-font-size * 1.05
+          
+        }
+      }
+
+
+      +redefine-tablet() {
+        font-size $title-font-size * 0.9
+      }
+    }
+
+
+    .social-contacts {
+      position absolute
+      bottom 60px
+      font-size $home-banner-icon-size
+      text-align center
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow 0 0 10px 0 rgba(0, 0, 0, 0.5)
+      padding 4px 24px
+      border-radius $redefine-border-radius-medium
+      box-shadow: inset 0 0 2000px var(--home-banner-icons-container-background-color);
+      border 1.5px solid var(--home-banner-icons-container-border-color);
+
+
+      +redefine-tablet() {
+        font-size $home-banner-icon-size * 0.9
+      }
+
+      .social-contact-item {
+        margin-right 20px
+        cursor pointer
+        line-height 2
+        color #FFF
+
+        &:last-child {
+          margin-right 0
+        }
+
+      }
+
+    }
+  }
+}
+
+
+    
+
+    <div class="main-content-container">
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content has-home-banner">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                <h1>
+                Cindy&#39;s website
+                </h1>
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="active" 
+                                    href="/website/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        首頁
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer">
+        <ul class="drawer-navbar-list">
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="active" 
+                        href="/website/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                首頁
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+                <div class="home-sidebar-container fade-in-down-animation">
+    <div class="sticky-container">
+        
+            
+            <div class="sidebar-content" >
+                <div class="avatar">
+                    <img src="/website/website/images/c2.png">
+                </div>
+                <div class="author">
+                    <div class="name">Cindy</div>
+                    
+                        <div class="label">Lv1</div>
+                    
+                </div>
+                <div class="statistics">
+                    <a class="item" href="/website/tags">
+                        <div class="number">0</div>
+                        <div class="label">標籤</div>
+                    </a>
+                    <a class="item" href="/website/categories">
+                        <div class="number">0</div>
+                        <div class="label">分類</div>
+                    </a>
+                    <a class="item" href="/website/archives">
+                        <div class="number">2</div>
+                        <div class="label">文章</div>
+                    </a>
+                </div>
+            </div>
+        
+
+    </div>
+</div>
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="home-content-container fade-in-down-animation">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/website/2023/06/03/%E8%8D%89%E5%80%91%E5%87%BA%E4%BB%BB%E5%8B%99%EF%BC%81/">
+                        草們出任務！
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Jun 03 2023 14:19:14 GMT+0800">
+                
+                    2023-06-03
+                
+            </span>
+        </span>
+        
+        
+    </div>
+
+    <a href="/website/2023/06/03/%E8%8D%89%E5%80%91%E5%87%BA%E4%BB%BB%E5%8B%99%EF%BC%81/">繼續閱讀...<span class="seo-reader-text">草們出任務！</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                <h3 class="home-article-title">
+                    <a href="/website/2023/06/03/hello-world/">
+                        Hello World
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, yo...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Jun 03 2023 14:16:07 GMT+0800">
+                
+                    2023-06-03
+                
+            </span>
+        </span>
+        
+        
+    </div>
+
+    <a href="/website/2023/06/03/hello-world/">繼續閱讀...<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+    </ul>
+
+    <div class="home-paginator">
+        <div class="paginator">
+    <span class="page-number current">1</span>
+</div>
+
+    </div>
+</div>
+
+                
+
+            </div>
+            
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Cindy</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        讀者&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        閱覽&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container"><?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 框架</span>
+                <br>
+            <span class="theme-version-container">主題&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.1.4</a>
+        </div>
+        
+        
+        
+            <div id="start_div" style="display:none">
+                2022/8/17 11:45:14
+            </div>
+            <div>
+                博客已運行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小時 <span class="odometer" id="runtime_minutes"></span> 分鐘 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+
+</main>
+
+
+
+
+
+<script src="/website/js/utils.js"></script>
+
+<script src="/website/js/main.js"></script>
+
+<script src="/website/js/layouts/navbarShrink.js"></script>
+
+<script src="/website/js/tools/scrollTopBottom.js"></script>
+
+<script src="/website/js/tools/lightDarkSwitch.js"></script>
+
+
+
+
+
+    
+<script src="/website/js/tools/codeBlock.js"></script>
+
+
+
+
+    
+<script src="/website/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/website/js/tools/runtime.js"></script>
+
+    
+<script src="/website/js/layouts/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/website/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/website/js/libs/Typed.min.js"></script>
+
+  
+<script src="/website/js/plugins/typed.js"></script>
+
+
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+</div>
+
+
+    
+<script src="/website/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax',
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            Global.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            Global.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            Global.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
