@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://cindykuo0913.github.io/images/ryan.jpeg">
 <meta property="og:image" content="https://cindykuo0913.github.io/images/joe.jpg">
 <meta property="article:published_time" content="2023-06-04T08:42:37.000Z">
-<meta property="article:modified_time" content="2023-06-04T09:24:51.750Z">
+<meta property="article:modified_time" content="2023-06-09T06:38:15.162Z">
 <meta property="article:author" content="CindyKuo">
 <meta property="article:tag" content="PLG">
 <meta name="twitter:card" content="summary">
@@ -227,8 +227,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-06-04 17:24:51</span>
-            <span class="mobile">2023-06-04 17:24</span>
+            <span class="desktop">2023-06-09 14:38:15</span>
+            <span class="mobile">2023-06-09 14:38</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -300,7 +300,7 @@
         <li><strong>撰寫于:</strong> 2023-06-04 16:42:37</li>
         
             <li>
-                <strong>更新于:</strong> 2023-06-04 17:24:51
+                <strong>更新于:</strong> 2023-06-09 14:38:15
             </li>
         
         <li>
@@ -330,6 +330,21 @@
             
                 <div class="article-nav">
                     
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/06/09/PLG2/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">22-23 冠軍賽G2G3</span>
+                                    <span class="post-nav-item">上一篇</span>
+                                </span>
+                            </a>
+                        </div>
+                    
                     
                         <div class="article-next">
                             <a class="next"
@@ -352,46 +367,47 @@
 
             
                 <div class="comment-container">
-                    <!-- <div class="comments-container">
-    <div id="comment-anchor"></div>
-    <div class="comment-area-title">
-        <i class="fa-solid fa-comments"></i>&nbsp;留言
-    </div>
-    
+                    if (hexo-config('comment.enable') == true && hexo-config('comment.system') != "") {
+  if (hexo-config('comment.system') == "waline") {
+    @require "./waline.styl"
 
-        
-            
- 
-    <div id="waline"></div>
-    <script type="module"  data-pjax>
-        import { init } from 'https://evan.beee.top/js/waline.mjs';
+  } else if (hexo-config('comment.system') == "gitalk") {
+    @require "./gitalk.styl"
 
-        function loadWaline() {
-            init({
-                el: '#waline',
-                serverURL: 'https://example.example.com',
-                lang: 'zh-CN',
-                dark: 'body[class~="dark-mode"]',
-                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
-            });
-        }
+  } else if (hexo-config('comment.system') == "twikoo") {
+    @require "./twikoo.styl"
+  }
+}
 
-        if ('true') {
-            const loadWalineTimeout = setTimeout(() => {
-                loadWaline();
-                clearTimeout(loadWalineTimeout);
-            }, 1000);
-        } else {
-            window.addEventListener('DOMContentLoaded', loadWaline);
-        }
-        
-    </script>
+.comments-container {
+  display inline-block
+  margin-top $spacing-unit
+  width 100%
 
+  #comment-anchor {
+    width 100%
+    height 10px
+  }
 
+  .comment-area-title {
+    width 100%
+    margin 10px 0
+    font-size 1.38rem
+    color var(--default-text-color)
+    font-family "Noto Sans", "Noto Sans SC",sans-serif
+    font-weight bold
 
-        
-    
-</div> -->
+    i {
+      color var(--default-text-color)
+    }
+
+    +redefine-tablet() {
+      margin 5px 0
+      font-size 1.2rem
+    }
+  }
+
+}
 
                 </div>
             
